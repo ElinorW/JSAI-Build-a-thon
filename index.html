@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoso Outdoor Company</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: linear-gradient(135deg, #e0f7fa 0%, #e8f5e9 100%);
+      color: #263238;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 32px 0 16px 0;
+      font-size: 40px;
+      color: #2e7d32;
+      letter-spacing: 2px;
+      font-weight: 800;
+      text-shadow: 0 2px 8px #b2dfdb55;
+    }
+
+    .category {
+      width: 92%;
+      margin: 32px auto;
+      border: none;
+      border-radius: 18px;
+      background: linear-gradient(120deg, #a5d6a7 0%, #fffde7 100%);
+      box-shadow: 0 4px 24px 0 #b2dfdb44;
+      padding: 28px 24px 24px 24px;
+      transition: box-shadow 0.2s;
+    }
+
+    .category:hover {
+      box-shadow: 0 8px 32px 0 #388e3c33;
+    }
+
+    .category h2 {
+      font-size: 26px;
+      margin-bottom: 18px;
+      color: #388e3c;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .category p {
+      margin-bottom: 22px;
+      color: #4e5d52;
+      font-size: 17px;
+      font-style: italic;
+    }
+
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: space-between;
+    }
+
+    .item {
+      text-align: center;
+      flex: 1 1 calc(33% - 24px);
+      border: none;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #e8f5e9 60%, #b2dfdb 100%);
+      padding: 18px 10px 14px 10px;
+      box-shadow: 0 2px 8px #b2dfdb33;
+      transition: transform 0.15s, box-shadow 0.15s;
+      min-width: 220px;
+      max-width: 320px;
+    }
+
+    .item:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 8px 24px #388e3c33;
+      background: linear-gradient(135deg, #b2dfdb 60%, #e8f5e9 100%);
+    }
+
+    .item img, .item div[style*="font-size"] {
+      margin-bottom: 12px;
+      border-radius: 8px;
+    }
+
+    .item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #2e7d32;
+      font-weight: 600;
+    }
+
+    .item p {
+      font-size: 17px;
+      color: #607d8b;
+      margin: 0;
+    }
+
+    .item span {
+      font-weight: bold;
+      color: #388e3c;
+      font-size: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .items {
+        flex-direction: column;
+        gap: 18px;
+      }
+      .item {
+        max-width: 100%;
+        min-width: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contoso Outdoor Company</h1>
+  </header>
+
+  <section class="category">
+    <h2>Tents</h2>
+    <p>Unfold adventure with Contoso's range of tents</p>
+    <div class="items">
+      <div class="item">
+        <h3>TrailMaster X4 Tent</h3>
+        <div style="font-size:48px;">⛺</div>
+        <p>Price: <span>$250</span></p>
+      </div>
+      <div class="item">
+        <h3>Alpine Explorer Tent</h3>
+        <div style="font-size:48px;">🏕️</div>
+        <p>Price: <span>$360</span></p>
+      </div>
+      <div class="item">
+        <h3>Sky View 2-Person Tent</h3>
+        <div style="font-size:48px;">⛺</div>
+        <p>Price: <span>$380</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Backpack</h2>
+    <p>Our backpack category is equipped to accompany you in every twist and turn.</p>
+    <div class="items">
+      <div class="item">
+        <h3>Adventurer Pro Backpack</h3>
+        <div style="font-size:48px;">🎒</div>
+        <p>Price: <span>$60</span></p>
+      </div>
+      <div class="item">
+        <h3>Summit Climber Backpack</h3>
+        <div style="font-size:48px;">🎒</div>
+        <p>Price: <span>$70</span></p>
+      </div>
+      <div class="item">
+        <h3>TrailLite DayPack</h3>
+        <div style="font-size:48px;">🎒</div>
+        <p>Price: <span>$40</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Hiking Clothing</h2>
+    <p>Step into nature with Contoso Outdoors hiking clothes.</p>
+    <div class="items">
+      <div class="item">
+        <h3>Summit Breeze Jacket</h3>
+        <div style="font-size:48px;">🧥</div>
+        <p>Price: <span>$60</span></p>
+      </div>
+      <div class="item">
+        <h3>Trail Blaze Pants</h3>
+        <div style="font-size:48px;">👖</div>
+        <p>Price: <span>$80</span></p>
+      </div>
+      <div class="item">
+        <h3>TREKSTAR Boots</h3>
+        <div style="font-size:48px;">🥾</div>
+        <p>Price: <span>$120</span></p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
